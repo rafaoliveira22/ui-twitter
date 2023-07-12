@@ -1,0 +1,84 @@
+/* ASIDE BAR */
+.sidebar{
+    padding: 1.5rem 1.25rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sidebar .logo{
+    width: 2rem;
+    height: 2rem;
+}
+
+.sidebar .btn-new-tweet{
+    background: var(--twitter-blue);
+    color: #fff;
+
+    border-radius:9999px;
+    border: 0;
+
+    padding: 1rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+
+.sidebar .btn-new-tweet svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: none;
+}
+
+.sidebar .btn-new-tweet:hover{
+    filter: brightness(0.95);
+}
+
+.sidebar .main-navegation{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sidebar .main-navegation a{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    
+    font: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.sidebar .main-navegation a svg{
+    width: 2rem;
+    height: 2rem;
+}
+
+.sidebar .main-navegation a.active{
+    color: var(--twitter-blue);
+}
+
+@media(max-width: 780px){
+    .sidebar{
+        padding: 1.5rem 0.75rem;
+        align-items: center;
+    }
+
+    .main-navegation a span{
+        display: none;
+    }
+
+    .sidebar .btn-new-tweet span{
+        display: none;
+    }
+
+    .sidebar .btn-new-tweet svg{
+        display: block;
+    }
+}
